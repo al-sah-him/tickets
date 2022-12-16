@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Add Ticket</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list lines="full">
+    <form [formGroup]="ticketForm" (ngSubmit)="formSubmit()">
+      <!-- <ion-item>
+        <ion-label position="floating">Order ID</ion-label>
+        <ion-input formControlName="order_id" type="text" required></ion-input>
+      </ion-item> -->
+      <ion-item>
+        <ion-label position="floating">First name</ion-label>
+        <ion-input formControlName="first_name" type="text" required></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Last name</ion-label>
+        <ion-input formControlName="last_name" type="text" required></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Phone Number</ion-label>
+        <ion-input formControlName="phone_number" type="text" required></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Amount</ion-label>
+        <ion-input formControlName="amount" type="text" required></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Number of tickets</ion-label>
+        <ion-input formControlName="number_of_tickets" type="number" required>
+        </ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Type of Tickets</ion-label>
+        <ion-input formControlName="type_of_ticket" type="text" required>
+        </ion-input>
+      </ion-item>
+      <ion-row>
+        <ion-col>
+          <ion-button type="submit" color="primary" shape="full" expand="block">Add Ticket</ion-button>
+        </ion-col>
+      </ion-row>
+    </form>
+  </ion-list>
+</ion-content>

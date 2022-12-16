@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Add Event</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list lines="full">
+    <form [formGroup]="eventForm" (ngSubmit)="formSubmit()">
+      <ion-item>
+        <ion-label position="floating">Event ID</ion-label>
+        <ion-input formControlName="event_id" type="text" required></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Event name</ion-label>
+        <ion-input formControlName="event_name" type="text" required></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Event Date</ion-label>
+        <ion-input formControlName="event_date" type="date" required></ion-input>
+      </ion-item>
+
+
+      <ion-row>
+        <ion-col>
+          <ion-button type="submit" color="primary" shape="full" expand="block">Add Event</ion-button>
+        </ion-col>
+      </ion-row>
+    </form>
+  </ion-list>
+</ion-content>
