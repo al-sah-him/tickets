@@ -134,7 +134,7 @@ export class WcConnectService {
 
   httpOptions = {
     headers: new HttpHeaders({ 'Content-Type': 'application/json',
-                               'Authorization': 'Basic Y2tfNTgxZGM1YWRhZGZhMWNiYmIyZmI3NmRiOGI2YmZlMDc0YTliNmYwNDpjc19hMjM1YjZmOWYzM2IyYWFjZmI2NzQ2ZmY1NjNkYjYxMGQ5YzkyYzEz'
+                               'Authorization': 'Basic <WooCommerce Store Access Token>'
                                })
         };
 

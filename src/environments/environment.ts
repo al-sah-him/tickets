@@ -6,12 +6,12 @@ export const environment = {
   production: false,
 
   firebaseConfig: {
-       apiKey: "AIzaSyD9gap_KW68E4oZ4QAGMHCHLEZiceI6ejM",
-       authDomain: "radint-tickets.firebaseapp.com",
-       projectId: "radint-tickets",
-       storageBucket: "radint-tickets.appspot.com",
-       messagingSenderId: "1068333340386",
-       appId: "1:1068333340386:web:a1cb74ef5accfc954630bb"
+       apiKey: "",
+       authDomain: "",
+       projectId: "",
+       storageBucket: "",
+       messagingSenderId: "",
+       appId: ""
   }
 };
 
